@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#main{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(132deg, rgb(8, 0, 255) 0.00%);
+}
+
+#main .container{
+  position: relative;
+  top: 4rem;
+  border-radius: 12px;
+  width: 90%;
+  height: 80vh;
+  margin: 0 auto;
+  box-shadow: 0 0 10px #000;
+}
+
+.container .verticalBarContainer{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.verticalBarContainer .barBox{
+  width: 100%;
+  margin: 0 auto;
+  height: 300px;
+}
+
+.barBox .plot{
+  gap: 10px;
+  margin: 20px;
+  height: 100%;
+  width: 80px;
+  align-items: center;
+  background: rgb(154, 233, 7);
+}
+
+.barBox p{
+  text-align: center;
+}
+
+.title{
+  margin: 100px 0 0 0;
+  font-size: 3em;
+}
+
+.plot #bar1{
+  height: 70%;
+  background: rgba(0, 0, 0, 0.6);
+  animation: bar1 3s ease-in-out;
+}
+
+.plot #bar2{
+  height: 60%;
+  background: rgba(0, 0, 0, 0.6);
+  animation: bar2 3s ease-in-out;
+}
+
+.plot #bar3{
+  height: 20%;
+  background: rgba(0, 0, 0, 0.6);
+  animation: bar3 3s ease-in-out;
+}
+
+@keyframes bar1 {
+  0%{
+    height: 100%;
+  }
+  100%{
+    height: 70%;
+  }
+}
+
+@keyframes bar2 {
+  0%{
+    height: 100%;
+  }
+  100%{
+    height: 60%;
+  }
+}
+
+@keyframes bar3 {
+  0%{
+    height: 100%;
+  }
+  100%{
+    height: 20%;
+  }
+}
